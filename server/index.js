@@ -7,8 +7,6 @@ import questionRoutes from "./routes/Questions.js";
 import answerRoutes from './routes/Answers.js';
 import userOtpRoutes from './routes/userOtp.js'
 import {verifyOtp} from './controllers/userOtp.js'
-// import ChatbotRoutes from './routes/Chatbot.js'
-// import {Chatbot} from './controllers/Chatbot.js'
 import dotenv from 'dotenv'
 import {Configuration, OpenAIApi} from 'openai';
 
