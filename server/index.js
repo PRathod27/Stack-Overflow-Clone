@@ -13,7 +13,7 @@ import dotenv from 'dotenv'
 import {Configuration, OpenAIApi} from 'openai';
 
 const configuration = new Configuration({
-    apiKey : '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'
+    apiKey : process.env.api
 }) 
 
 const openai = new OpenAIApi(configuration);
@@ -43,7 +43,7 @@ app.use('/answers',answerRoutes)
 const  PORT = process.env.PORT || 5000
 
 
-const CONNECTION_URL =  'mongodb+srv://Stack-User:27151107@stack.lmzxwbm.mongodb.net/?retryWrites=true&w=majority'
+const CONNECTION_URL =  process.env.DATA_URL
 
 mongoose.connect(CONNECTION_URL , {useNewUrlParser: true, useUnifiedTopology : true})
     .then(() => app.listen(PORT,() => {console.log( `server running on port ${PORT}`)}))
