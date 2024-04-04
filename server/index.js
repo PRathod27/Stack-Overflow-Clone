@@ -8,13 +8,7 @@ import answerRoutes from './routes/Answers.js';
 import userOtpRoutes from './routes/userOtp.js'
 import {verifyOtp} from './controllers/userOtp.js'
 import dotenv from 'dotenv'
-import {Configuration, OpenAIApi} from 'openai';
 
-const configuration = new Configuration({
-    apiKey : process.env.api
-}) 
-
-const openai = new OpenAIApi(configuration);
 const app = express();
 dotenv.config();    
 app.use(express.json({limit : '30mb',extended : 'true'}))
@@ -30,14 +24,9 @@ app.get('/',(req,res) =>{
 app.use('/user', userRoutes)
 app.post('/userOtp',userOtpRoutes)
 app.post('/verifyOtp',verifyOtp)
-// app.use('/Chatbot',ChatbotRoutes)
-// app.post('/Chatbot',Chatbot)
-
-// app.use('/Chatbot', ChatbotRoutes)
-// app.use('/user/sendEmail',sendEmail)
 app.use('/questions', questionRoutes) 
 app.use('/answers',answerRoutes)
-
+// app.post('/chatbot',chatbot)
 const  PORT = process.env.PORT || 5000
 
 
