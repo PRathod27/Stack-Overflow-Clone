@@ -2,16 +2,16 @@
 import otps from "../models/userOtp.js";
 import users from "../models/auth.js";
 import nodemailer from "nodemailer";
-// var secret = speakeasy.generateSecret();
-
+import dotenv from 'dotenv'
 // Generate and send OTP to user's email or phone number
 
+dotenv.config();  
 const transporter = nodemailer.createTransport({
   service: "gmail",
   auth: {
     // TODO: replace `user` and `pass` values from <https://forwardemail.net>
     user: "premrathod2317@gmail.com",
-    pass: "hsfbtmefvewqatod",
+    pass: process.env.PASSWORD,
   },
 });
 
