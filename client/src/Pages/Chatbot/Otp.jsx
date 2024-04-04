@@ -45,27 +45,6 @@ const Otp = () => {
     }
   }
 
-//   let datasend = {
-//     email : email
-//   }
-
-//   const res = await fetch(`${API}`,{
-//     method : 'POST',
-//     headers: {
-//       'Content-Type': 'application/json'
-//     },
-//     body: JSON.stringify(datasend)
-//   })
-
-
-//   .then(response => response.json())
-// .then(datasend => {
-// console.log('Success:', datasend);
-// navigate('/Otp')
-// })
-// .catch((error) => {
-// console.error('Error:', error);
-// });
   return (
     <div className="otp-container-2">
     <form onSubmit  = {Verifyuser} style={{ alignItems: "center", marginTop: "30%" }}>

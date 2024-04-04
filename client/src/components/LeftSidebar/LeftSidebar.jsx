@@ -3,6 +3,7 @@ import { NavLink } from 'react-router-dom'
 import Globe from '../../assests/Globe.svg'
 import '../LeftSidebar/LeftSidebar.css'
 
+
 const LeftSidebar = () => {
     return (
         <div className='left-sidebar'>
