@@ -7,7 +7,7 @@ import AboutAuth from "./AboutAuth";
 import { signup, login } from "../../actions/auth";
 
 const Auth = () => {
-  const [ isSignup, setIsSignup] = useState(false);
+  const [ isSignup, setIsSignup ] = useState(false);
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");

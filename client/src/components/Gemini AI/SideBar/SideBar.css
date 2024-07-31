@@ -1,0 +1,87 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+.sidebar{
+    font-family: Outfit;
+    float: left;
+    min-height: 120vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #f0f4f9;
+    margin-right: 20px;
+    padding: 25px 15px;
+}
+.sidebar img{
+    width: 20px;
+}
+
+.sidebar .menu{
+    display: block;
+    margin-top: 10px;
+    margin-left:10px;
+    cursor: pointer;
+}
+
+.top{
+    padding: 15px;
+    margin-top: 42px;
+}
+
+.new-chat{
+    margin-top: 50px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 2px 15px;
+    background-color: #e6eaf1;
+    border-radius: 50px;
+    font-size: 14px;
+    color: gray;
+    cursor: pointer;
+}
+
+.new-chat img{
+    float: right;
+}
+.msg{
+    margin-top: 15px;
+}
+.recent{
+    display: flex;
+    flex-direction: column;
+}
+
+.recent-title{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.recent-entry{
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 10px;
+    padding-right: 40px;
+    border-radius: 50px;
+    color: #282828;
+    cursor: pointer;
+}
+
+.recent-entry:hover{
+    background-color: #e2e6eb;
+}
+
+.bottom{
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+}
+.bottom-item{
+    padding-right: 10px;
+    cursor: pointer;
+}
+
+.recent-entry{
+    margin-bottom: 10%;
+}

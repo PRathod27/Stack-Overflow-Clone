@@ -57,7 +57,7 @@ const HomeMainbar = () => {
     <div className='main-bar'>
         <div className='main-bar-header'>
               {
-                location.pathname === '/' ? <h1>Top Questions</h1> : <h1>All questions</h1>
+                location.pathname === '/' ? <h1 style={{marginTop:'40px'}}>Top Questions</h1> : <h1 style={{marginTop:"40px"}}>All questions</h1>
               }
               <button onClick={checkAuth} className='ask-btn'>Ask Question</button>
         </div>

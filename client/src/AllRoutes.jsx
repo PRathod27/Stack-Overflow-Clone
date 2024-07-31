@@ -8,9 +8,8 @@ import DisplayQuestion from './Pages/Questions/DisplayQuestion.jsx'
 import Tags from "./Pages/Tags/Tags";
 import Users from "./Pages/Users/Users";
 import UserProfile from "./Pages/UserProfile/UserProfile";
-import Email from '../src/Pages/Chatbot/Email.jsx'
-import Otp from '../src/Pages/Chatbot/Otp.jsx'
-import Chatbot from './Pages/Chatbot/Chatbot.jsx'
+// import Gemini from './Pages/Gemini AI/Gemini.jsx'
+import Mount from './components/Gemini AI/Mount.jsx'
 
 const AllRoutes = () => {
   return (
@@ -23,11 +22,9 @@ const AllRoutes = () => {
             <Route path='/AskQuestion' element = {<AskQuestion/>} />
             <Route path='/Questions/:id' element = {<DisplayQuestion/>} />
             <Route path='/Tags' element = {<Tags/>} />
-            <Route path='/Email' element = {<Email/>} />
-            <Route path='/Otp' element = {<Otp/>} /> 
-            <Route path='/Chatbot' element = {<Chatbot/>}/>
             <Route path='/Users' element = {<Users/>} />
             <Route path='/Users/:id' element = {<UserProfile/>} />  
+            <Route path='/AI' element = {<Mount/>}/>
       </Routes>
   
   )

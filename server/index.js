@@ -5,8 +5,6 @@ import mongoose from 'mongoose';
 import userRoutes from '../server/routes/users.js'
 import questionRoutes from "./routes/Questions.js";
 import answerRoutes from './routes/Answers.js';
-import userOtpRoutes from './routes/userOtp.js'
-import {verifyOtp} from './controllers/userOtp.js'
 import dotenv from 'dotenv'
 
 const app = express();
@@ -22,11 +20,8 @@ app.get('/',(req,res) =>{
 // })
 })
 app.use('/user', userRoutes)
-app.post('/userOtp',userOtpRoutes)
-app.post('/verifyOtp',verifyOtp)
 app.use('/questions', questionRoutes) 
 app.use('/answers',answerRoutes)
-// app.post('/chatbot',chatbot)
 const  PORT = process.env.PORT || 5000
 
 

@@ -1,32 +1,3 @@
-// import React from 'react'
-// import './RightSidebar.css' 
-// // import comment from '../../assests/comment.svg'
-// import pen from '../../assests/pen.svg'
-// // import blacklogo from '../../assests/blacklogo.svg'
-
-// const Widget = () => {
-//   return (
-//     <div className='widget'>
-//         <h4>The Overflow Blog</h4>
-//         <div className='right-sidebar-div-1'>
-//           <div className='right-sidebar-div-2'>
-//             <img src={pen} alt = 'pen' width='12px'/>
-//             <p>
-//                 Observability is key to the future of software (and your DevOps carrer). 
-//             </p>
-//         </div>
-//         <div className='right-sidebar-div-2'>
-//             <img src = {pen} alt = 'comm' width='12px'/>
-//             <p>Podcast 374: How valuable is your screen name?</p>
-//         </div>
-//       </div>
-//     </div>
-//   )
-// }
-
-// export default Widget
-
-
 import React from 'react'
 import './RightSidebar.css'
 import comment from '../../assests/comment.svg'
