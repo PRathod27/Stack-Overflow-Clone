@@ -22,7 +22,7 @@ app.get('/',(req,res) =>{
 app.use('/user', userRoutes)
 app.use('/questions', questionRoutes) 
 app.use('/answers',answerRoutes)
-const  PORT = process.env.PORT || 5000
+const  PORT = process.env.PORT
 
 
 const CONNECTION_URL =  process.env.DATA_URL
