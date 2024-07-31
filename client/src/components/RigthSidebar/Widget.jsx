@@ -18,6 +18,7 @@ const Widget = () => {
                     <p>Podcast 374: How valuable is your screen name?</p>
                 </div>
             </div>
+            <br/>
             <h4>Featured on Meta</h4>
             <div className='right-sidebar-div-1'>
                 <div className='right-sidebar-div-2'>

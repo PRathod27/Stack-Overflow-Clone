@@ -1,7 +1,9 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import moment from 'moment'
+import './HomeMainbar.css'
 const Question = ({question}) => {
+  
   return (
     <div className='display-question-container'>
         <div className='display-votes-ans'>
