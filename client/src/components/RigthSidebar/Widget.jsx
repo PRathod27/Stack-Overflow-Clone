@@ -17,8 +17,7 @@ const Widget = () => {
                     <img src={pen} alt="pen" width='12'/>
                     <p>Podcast 374: How valuable is your screen name?</p>
                 </div>
-            </div>
-            <br/>
+            </div>  
             <h4>Featured on Meta</h4>
             <div className='right-sidebar-div-1'>
                 <div className='right-sidebar-div-2'>
