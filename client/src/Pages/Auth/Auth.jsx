@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import "./Auth.css";
-import icon from "../../assests/icon.svg";
+import stack from "../../assests/stack-icon.svg";
 import AboutAuth from "./AboutAuth";
 import { signup, login } from "../../actions/auth";
 
@@ -41,7 +41,7 @@ const Auth = () => {
     <section className="auth-section">
       {isSignup && <AboutAuth />}
       <div className="auth-container-2">
-        <img src={icon} alt="stack overflow" className="login-logo" width={'18px'}/>
+        <img src={stack} alt="stack overflow" className="login-logo" width={'18px'}/>
         <form onSubmit={handleSubmit}>
           {isSignup && (
             <label htmlFor="name">
