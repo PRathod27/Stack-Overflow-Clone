@@ -4,6 +4,7 @@ import photo from '../../../assests/photo.svg'
 import send from '../../../assests/send.svg'
 import mic from '../../../assests/mic.svg'
 import { Context } from '../../../context/Context'
+import gemini_icon from '../../../assests/gemini_icon.webp'
 
 const Main = () => {
 
@@ -32,13 +33,13 @@ const Main = () => {
                     <p>Suggest Beautiful places to see on an upcoming Trip</p>
                 </div>
                 <div className="card">
-                    <p>Suggest Beautiful places to see on an upcoming Trip</p>
+                    <p>Suggest me some innovative ideas for project.</p>
                 </div>
                 <div className="card">
-                    <p>Suggest Beautiful places to see on an upcoming Trip</p>
+                    <p>What is gemini?</p>
                 </div>
                 <div className="card">
-                    <p>Suggest Beautiful places to see on an upcoming Trip</p>
+                    <p>Which trip is best in winter?</p>
                 </div>
             </div>
         </> :
@@ -48,7 +49,7 @@ const Main = () => {
                     <p>{recentPrompt}</p>
                 </div>
                 <div className="result-data">
-                    {/* <img src={assets.gemini_icon} alt="" /> */} 
+                    <img src={gemini_icon} alt="" /> 
                     {loading ? 
                          <div className="loader">
                          <hr />
@@ -56,10 +57,6 @@ const Main = () => {
                          <hr />
                      </div>: <p dangerouslySetInnerHTML={{ __html: resultData }}></p>
                     }   
-                       
-                
-                        
-                
                 </div>
                 </div>
         }
